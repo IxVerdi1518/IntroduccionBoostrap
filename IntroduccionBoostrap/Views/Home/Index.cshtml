@@ -1,0 +1,212 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<p>Con el conteiner hace que se centre todo lo que esta en la pantalla
+    En la tabla siguiente, las columnas se dividen en 12 celdas y estas se pueden ir adaptando
+</p>
+<div class="row">
+    <div class="col">
+        Columna 1
+    </div>
+    <div class="col">
+        Columna 2
+    </div>
+    <div class="col">
+        Columna 3
+    </div>
+    <div class="col">
+        Columna 4
+    </div>
+    <div class="col">
+        Columna 5
+    </div>
+    <div class="col">
+        Columna 6
+    </div>
+    <div class="col">
+        Columna 7
+    </div>
+    <div class="col">
+        Columna 8
+    </div>
+    <div class="col">
+        Columna 9
+    </div>
+    <div class="col">
+        Columna 10
+    </div>
+    <div class="col">
+        Columna 11
+    </div>
+    <div class="col">
+        Columna 12
+    </div>
+</div>
+<p>Y cambiando la clase "Col" estas se puede asignar el numero de espacios que va a ocupar las celdas. Lo importante es calcular los
+    12 espacios
+    Un claro ejemplo con la talba siguiente
+</p>
+<div class="row">
+    <div class="col-3">
+        Columna 1
+    </div>
+    <div class="col-6">
+        Columna 2
+    </div>
+    <div class="col-3">
+        Columna 3
+    </div>
+</div>
+<h4>Ejemplo 1: Alineando la fila</h4>
+<p>
+    Se puede ajustar el contenido de las columnas segun lo que se necesite
+</p>
+<h5>Al Inicio</h5>
+<div class="row align-items-start">
+    <div class="col">
+        Columna 1
+    </div>
+    <div class="col">
+        Columna 2
+    </div>
+    <div class="col">
+        Columna 3
+    </div>
+</div>
+<h5>Al medio</h5>
+<div class="row align-items-center">
+    <div class="col">
+        Columna 1
+    </div>
+    <div class="col">
+        Columna 2
+    </div>
+    <div class="col">
+        Columna 3
+    </div>
+</div>
+<h5>Al final</h5>
+<div class="row align-items-end">
+    <div class="col">
+        Columna 1
+    </div>
+    <div class="col">
+        Columna 2
+    </div>
+    <div class="col">
+        Columna 3
+    </div>
+</div>
+<h4>Ejemplo 2: Alineando las columnas horizontalmente</h4>
+<p>
+    Esta alineacin se restringue directamente solo a las ubicaciones de la columna individualemten,
+    a diferencia de la anterios
+</p>
+<div class="row">
+    <div class="col align-self-md-start">
+        Columna 1
+    </div>
+    <div class="col align-self-md-center">
+        Columna 2
+    </div>
+    <div class="col align-self-md-end">
+        Columna 3
+    </div>
+</div>
+<h4>Ejemplo 3: Offset</h4>
+<p>Toca hacer el calculo correspondiente para que se pegue la columa deseada al borde</p>
+<div class="row">
+    <div class="col-4">
+        Columna 1
+    </div>
+    <div class="col-4 offset-4">
+        Columna 2
+    </div>
+</div>
+<h4>Ejemplo 4: Auto Margen</h4>
+<p>Funciona para pegar las columnas automaticamente independiente del tamaño de las mismas</p>
+<div class="row">
+    <div class="col-4">
+        Columna 1
+    </div>
+    <div class="col-4 ms-auto">
+        Columna 2
+    </div>
+</div>
+<h4>Ejemplo 5: Gutter horizontal</h4>
+<p>Con el gutter se puede separar las columnas hasta 5 px</p>
+<div class="row gx-3">
+    <div class="col">
+        <div class="bg-light border">
+            Columna 1
+        </div>
+    </div>
+    <div class="col">
+        <div class="bg-light border">
+            Columna 2
+        </div>
+    </div>
+</div>
+<h4>Ejemplo 6: Gutter vertical</h4>
+<p>Con el gutter se puede separar las filas hasta 5 px</p>
+<div class="row gx-3 gy-5">
+    <div class="col-6">
+        <div class="bg-light border">
+            Columna 1
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="bg-light border">
+            Columna 2
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="bg-light border">
+            Columna 3
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="bg-light border">
+            Columna 4
+        </div>
+    </div>
+</div>
+<h4>Ejemplo 7: Gutter vertical y horizontal de la misma medida</h4>
+<div class="row g-2">
+    <div class="col-6">
+        <div class="bg-light border">
+            Columna 1
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="bg-light border">
+            Columna 2
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="bg-light border">
+            Columna 3
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="bg-light border">
+            Columna 4
+        </div>
+    </div>
+</div>
+<h4>Manejo de imagenes</h4>
+<p>
+    En este apartado se podra maejar las imagenes para que queden alienadas y no se salgan de la pantalla
+</p>
+<div class="row">
+    <div class="col-4">
+        <img class="img-fluid" src="https://media.primicias.ec/2023/05/23180623/ecuador-gol-eslovaquia.jpg" />
+    </div>
+    <div class="col-4">
+        <img class="img-fluid" src="https://media.primicias.ec/2023/05/23180623/ecuador-gol-eslovaquia.jpg" />
+    </div>
+    <div class="col-4">
+        <img class="img-fluid" src="https://media.primicias.ec/2023/05/23180623/ecuador-gol-eslovaquia.jpg" />
+    </div>
+</div>
+
